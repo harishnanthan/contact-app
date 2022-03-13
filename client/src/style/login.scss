@@ -1,0 +1,69 @@
+.login-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    form {
+        width: 350px;
+        input {
+            width: 100%;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: transparent;
+            border: 2px solid #d2d2d7;
+            border-radius: 5px;
+        }
+        input:focus {
+            outline: none;
+            border: 2px solid #06c;
+        }
+        .signup {
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 1.2rem;
+            button {
+                margin-top: 10px;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #06c;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+            button:hover {
+                text-decoration: underline;
+            }
+        }
+        .submit-button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            button {
+                margin-top: 10px;
+                font-size: 1rem;
+                padding: 10px 90px;
+                font-weight: 500;
+                color: #fff;
+                background-color: #06c;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: rgb(25, 110, 196);
+            }
+        }
+    }
+}
