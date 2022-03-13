@@ -26,7 +26,7 @@ export default function Login() {
         event.preventDefault()
         axios({
             method: 'POST',
-            url: 'http://localhost:8000/api/users/login',
+            url: `${process.env.REACT_APP_BACKEND_URL}/api/users/login`,
             data: loginValue,
         }).then((res) => {
             navigate('/contact')

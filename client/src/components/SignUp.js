@@ -28,7 +28,7 @@ export default function SignUp() {
         event.preventDefault()
         axios({
             method: 'POST',
-            url: 'http://localhost:8000/api/users/signup',
+            url: `${process.env.REACT_APP_BACKEND_URL}/api/users/signup`,
             data: signupValue,
         }).then(
             navigate(`/login`)

@@ -20,7 +20,7 @@ export default function Contact() {
         const getData = async () => {
             const res = await axios({
                 method: "GET",
-                url: "http://localhost:8000/api/contact",
+                url: `${process.env.REACT_APP_BACKEND_URL}/api/contact`,
                 headers: {
                     id: localStorage.getItem('id')
                 }
