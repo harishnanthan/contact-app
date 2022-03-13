@@ -51,7 +51,7 @@ export default function Contact() {
             oneContact["userId"] = localStorage.getItem("id")
             const res = await axios({
                 method: "POST",
-                url: "http://localhost:8000/api/contact",
+                url: `${process.env.REACT_APP_BACKEND_URL}/api/contact`,
                 data: oneContact
             })
             setContact(prevState => [...prevState, res.data.contact])
